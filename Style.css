@@ -6,8 +6,8 @@
 
 @font-face {
   font-family: "Reey Regular";
-  src: url("Reey-Regular.otf") format("otf"),
-       url("Reey-Regular.woff") format("woff");
+  src: url("Reey-Regular.woff") format("woff")
+       ;
   font-weight: normal;
   font-style: normal;
 }
@@ -316,3 +316,4 @@ nav {
   font-weight: 400;
   font-family: "Open Sans";
 }
+
