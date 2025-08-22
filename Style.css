@@ -6,9 +6,10 @@
 
 @font-face {
   font-family: "Reey Regular";
-  font-style: normal;
+  src: url("Reey-Regular.otf") format("otf"),
+       url("Reey-Regular.woff") format("woff");
   font-weight: normal;
-  src: local("Reey Regular"), url("Reey-Regular.woff") format("woff");
+  font-style: normal;
 }
 
 body {
@@ -42,19 +43,17 @@ nav {
 }
 
 .nav-links li {
-  margin: 0;
+ display:flex;
 }
 
 .nav-links a {
   font-size: 1.2vw;
-  letter-spacing: 2px;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 400;
   text-decoration: none;
   transition: color 0.3s ease;
   position: relative;
-  padding: 5px 0;
 }
 
 .nav-links a:hover {
@@ -107,19 +106,6 @@ nav {
   background: #b38732;
 }
 
-/* HOME SECTION */
-.home {
-  position: absolute;
-  width: 100vw;
-  height: 60vw;
-  background: url("HeaderBackground1.png") center/cover no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  text-align: center;
-}
-
 /* Logo */
 .home-logo {
   position: fixed;
@@ -129,13 +115,27 @@ nav {
   top: 0.1vw;
 }
 
+/* HOME SECTION */
+.home {
+  width: 100%;
+  min-height: 50vw;
+  background: url("HeaderBackground1.png") center/cover no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* left text, right images */
+  align-items: center;
+  padding: 5vw;
+  gap: 3vw;
+}
+
+
+
 /* Heading */
 .main-heading {
   position: absolute;
   left: 7vw;
   top: 15vw;
   font-size: 7vw;
-  font-weight: 400;
+  font-weight: 40;
   color: #ffffff;
   font-family: "Reey Regular";
   filter: drop-shadow(0px 5px 2.5px rgba(84, 82, 79, 0.22));
@@ -242,7 +242,7 @@ nav {
 
 .content1pic {
   width: 100%;
-  filter: drop-shadow(0px 25px 12px rgba(12, 13, 12, 0.35));
+ filter: drop-shadow(0vw 2vw 0.5vw grey);
 }
 
 .content1title {
@@ -269,7 +269,7 @@ nav {
 }
 .content2pic {
   width: 100%;
-  filter: drop-shadow(0px 19px 6.5px rgba(12, 13, 12, 0.38));
+  filter: drop-shadow(0vw 2vw 0.5vw grey);
 }
 
 .content2title {
@@ -298,7 +298,7 @@ nav {
 
 .content3pic {
   width: 100%;
-  filter: drop-shadow(1.883px 26.934px 12px rgba(12, 13, 12, 0.3));
+  filter: drop-shadow(0vw 2vw 0.5vw grey);
 }
 
 .content3title {
