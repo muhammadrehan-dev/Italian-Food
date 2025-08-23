@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Reey Regular";
-  src: url("Fonts/Reey-Regular.woff") format("otf"),
+  src: url("Fonts/Reey-Regular.woff") format("woff"),
     url("Fonts/Reey-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -810,3 +810,4 @@ body {
   left: -6vw;
   line-height: 3vw;
 }
+
