@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body {
@@ -31,6 +32,7 @@ body {
   font-weight: 700;
   width: 100vw;
 }
+
 
 .nav-links {
   display: flex;
@@ -97,10 +99,13 @@ body {
 
 .home-logo {
   position: absolute;
-  width: 5vw;
-  left: 10vw;
-  top: 2px;
-  max-width: 120px;
+  width: 50px;
+  height: auto;
+  left: 20px;
+  top: 10px;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
 }
 
  .home {
@@ -1163,17 +1168,14 @@ body {
 
 @media (max-width: 768px) {
   .home-logo {
-    width: 8vw;
-    left: 5vw;
-    max-width: 50px;
+    width: 40px;
+    left: 15px;
   }
 }
 
 @media (max-width: 480px) {
   .home-logo {
-    width: 10vw;
-    left: 3vw;
-    max-width: 45px;
+    width: 35px;
+    left: 10px;
   }
 }
-
