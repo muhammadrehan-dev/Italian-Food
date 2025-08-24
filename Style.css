@@ -29,6 +29,7 @@ body {
   font-size: clamp(0.8rem, 1vw, 1.2rem);
   text-transform: uppercase;
   font-weight: 700;
+  width: 100vw;
 }
 
 .nav-links {
@@ -1175,3 +1176,4 @@ body {
     max-width: 45px;
   }
 }
+
